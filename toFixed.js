@@ -6,7 +6,6 @@ var numbers = {
     init: function(){
 
         $(".tofixed").each(function () {
-            // alert('here');
             var my_number = ($(this).val() == '') ? 0 : parseFloat($(this).val());
             $(this).val(my_number.toFixed(3));
         });
